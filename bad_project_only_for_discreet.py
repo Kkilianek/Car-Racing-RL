@@ -59,7 +59,7 @@ class EpsilonGreedyCarRacingAgent:
 
 
 learning_rate = 1
-n_episodes = 1000
+n_episodes = 100
 initial_epsilon = 1.0
 epsilon_decay = initial_epsilon ** (1 / n_episodes)
 final_epsilon = 0.01
