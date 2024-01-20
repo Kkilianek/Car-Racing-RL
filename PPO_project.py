@@ -52,7 +52,7 @@ except Exception as e:
     )
 
     # Train model
-    model.learn(total_timesteps=int(4e5))
+    model.learn(total_timesteps=int(4e6))
     # Evaluate model
     mean_reward, std_reward = evaluate_policy(model, env, n_eval_episodes=10)
 
