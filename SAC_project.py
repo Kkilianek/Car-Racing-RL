@@ -10,7 +10,6 @@ from stable_baselines3.common.evaluation import evaluate_policy
 def make_env(render_mode: str | None = None):
     env = gym.make('CarRacing-v2', render_mode=render_mode)
     env = FrameSkip(env, skip=2)
-    env = HistoryWrapper(env, horizon=2)
     env = ResizeObservation(env, shape=64)
     env = GrayScaleObservation(env, keep_dim=True)
     return env
