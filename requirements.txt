@@ -1,6 +1,5 @@
 gymnasium[box2d,other]
 stable_baselines3
 rl_zoo3
-tqdm
 matplotlib
 torchvision
