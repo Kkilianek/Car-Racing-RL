@@ -1,7 +1,7 @@
 import gymnasium as gym
 from gymnasium.wrappers.gray_scale_observation import GrayScaleObservation
 from gymnasium.wrappers.resize_observation import ResizeObservation
-from rl_zoo3.wrappers import FrameSkip, HistoryWrapper
+from rl_zoo3.wrappers import FrameSkip
 from stable_baselines3 import SAC
 from stable_baselines3.common.env_util import make_vec_env
 from stable_baselines3.common.evaluation import evaluate_policy

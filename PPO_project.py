@@ -1,5 +1,4 @@
 import gymnasium as gym
-import numpy as np
 import torch.nn as nn
 from gymnasium.wrappers.gray_scale_observation import GrayScaleObservation
 from gymnasium.wrappers.resize_observation import ResizeObservation
