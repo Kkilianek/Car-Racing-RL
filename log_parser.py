@@ -23,11 +23,17 @@ def parse_file(file_name):
 
 
 def plot_data(data, file_name):
+    timesteps = data['total_timesteps']
     for key, values in data.items():
-        plt.figure(figsize=(10, 5))
-        plt.plot(values)
-        plt.title(f"{key} from {file_name}")
-        plt.show()
+        if key != 'total_timesteps':
+            plt.figure(figsize=(10, 5))
+            try:
+                plt.plot(timesteps, values)
+                plt.xlabel('total_timesteps')
+            except ValueError:
+                plt.plot(values)
+            plt.title(f"{key} from {file_name}")
+            plt.show()
 
 
 if __name__ == '__main__':
